@@ -4,8 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>dom01</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-  
+  <div class="wrapper">
+    <div class="content">
+      11111 <br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+      1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+      1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>
+    </div>
+  </div>
+  <script>
+    (function() {
+      document.addEventListener('DOMContentLoaded', domLoaded);
+      let contentEl = document.querySelector('.content');
+      function domLoaded() {
+        contentEl.addEventListener('click',contentClick)
+      }
+      function contentClick(e) {
+        console.log('e',e)
+        console.log('el.getBoundingClientRect',contentEl.getBoundingClientRect())        
+      }
+    })()
+  </script>
 </body>
 </html>
