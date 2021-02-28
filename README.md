@@ -11,3 +11,20 @@
 > screenX、screenY：事件属性返回当事件被触发时鼠标位置相对于用户屏幕水水平坐标、垂直坐标，此时的参照点也就是原点是屏幕的左上角。
 
 + DOMContentLoaded事件： 等待dom文档加载完成
++ el.offsetTop: 相对于父元素的偏移量（父元素为relative或者其他的时候）**不会随着滚动而改变；**
+
+===============
+
+### dom2
++ css属性 pointer-event:
+  > none : 禁用鼠标事件,
+  
+  > auto : 开启鼠标事件，(默认值)
++ 浏览器内核：
+  > Trident： IE；***-ms-***
+
+  > Gecko： Firefox； ***-moz-***
+
+  > webkit： Safari，Google Chrome，遨游3，猎豹，百度；  ***-webkit-*** 
+
+  > Presto：Opera——Opera mini ***-o-***
