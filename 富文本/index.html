@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>富文本</title>
+</head>
+<body>
+  <br>
+  <br>
+  <div>title</div>
+  <div class="title"></div>
+  <br>
+  <br>
+
+  <div id="div1">
+  </div>
+  <div class="nihao">nihao</div>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"></script> -->
+  <!-- <link href="https://cdn.bootcdn.net/ajax/libs/wangEditor/3.1.1/wangEditor.css" rel="stylesheet"> -->
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/wangEditor/3.1.1/wangEditor.min.js"></script> -->
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/wangEditor/3.0.9/wangEditor.min.js"></script> -->
+  <script src="./js/wangEditor.min.js"></script>
+  <script type="text/javascript">
+    const E = window.wangEditor
+    const editor = new E('#div1')
+    editor.config.menus = [
+        'bold',
+        'foreColor',
+    ]
+    editor.config.colors = [
+    '#000000',
+    '#eeece0',
+    '#1c487f',
+    '#4d80bf',
+    'red',
+  ]
+  var title = document.querySelector('.title');
+    editor.create()
+    editor.config.onchange = function (newHtml) {
+      var oldHtml = title.innerHTML;
+      var text = editor.txt.text();
+      console.log('newHtml',newHtml)
+      if (text.includes('&nbsp;')) {
+        alert('输入的有误')
+        editor.txt.html(oldHtml)
+      }
+      if (text.length > 10) {
+        alert('超出长度')
+        editor.txt.html(oldHtml)
+      }
+      title.innerHTML = newHtml;
+    }
+   
+</script>
+</body>
+</html>

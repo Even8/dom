@@ -28,3 +28,7 @@
   > webkit： Safari，Google Chrome，遨游3，猎豹，百度；  ***-webkit-*** 
 
   > Presto：Opera——Opera mini ***-o-***
+
+document.body
+document.scrollingElement.scrollTop = 0
+document.scrollTo(0,0)

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>touch</title>
+</head>
+<body>
+  <div class="ev-touch">我是touch触点</div>
+  <br/>
+  <div class="ev-mouse">我是mouse触点</div>
+  <script>
+    let touchEl = document.querySelector('.ev-touch')
+    touchEl.addEventListener('touchstart', function(e) {
+      console.log('e-touchstart', e);
+      // alert('e-touchstart')
+    })
+    // 虽然在手机上会执行，并不兼容所有手机。
+    let mouseEl = document.querySelector('.ev-mouse');
+    mouseEl.addEventListener('mousedown', function(e) {
+      console.log('e-mousedown',e)
+      // alert('e-mousedown')
+    })
+  </script>
+</body>
+</html>
