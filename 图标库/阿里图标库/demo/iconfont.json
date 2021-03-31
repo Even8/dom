@@ -1,0 +1,65 @@
+{
+  "id": "2455848",
+  "name": "矢量图测试",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "20310296",
+      "name": "大暴雨",
+      "font_class": "dabaoyu",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "20657665",
+      "name": "迎宾鲜果",
+      "font_class": "yingbinxianguo",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "15342948",
+      "name": "半星",
+      "font_class": "banxing",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18522308",
+      "name": "半星_面",
+      "font_class": "banxing_mian",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "6713762",
+      "name": "趣满满半星",
+      "font_class": "qumanmanbanxing",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "6713763",
+      "name": "萤火虫半星",
+      "font_class": "yinghuochongbanxing",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "20725572",
+      "name": "趣满满半星",
+      "font_class": "qumanmanbanxing-copy",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "20725581",
+      "name": "趣满满半星",
+      "font_class": "qumanmanbanxing-copy-copy",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    }
+  ]
+}
