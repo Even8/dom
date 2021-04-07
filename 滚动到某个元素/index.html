@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>滚动到某个元素</title>
+  <style>
+    /* .Even {
+      scroll-behavior: smooth 
+    } */
+    html,body {
+      scroll-behavior: smooth 
+    }
+  </style>
+</head>
+<body>
+  <div class="btn">点击了按钮</div>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  <div class="Even">eveveveve</div>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/> 1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+  1<br/>
+
+  <script>
+    var btn = document.querySelector('.btn');
+    btn.addEventListener('click', function() {
+      var even = document.querySelector('.Even')
+      even.scrollIntoView({
+        block: "center",
+      });
+    })
+  </script>
+</body>
+</html>
