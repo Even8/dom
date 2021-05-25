@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>测试canvas的drawImage可以传哪些参数</title>
+  <style>
+    .CSSImageValue {
+      border: 1px solid black;
+      display: inline-block;
+      min-height: 100px; min-width: 100px;
+      background: no-repeat 5% center url(https://mdn.mozillademos.org/files/16793/magicwand.png) aqua;
+    }
+  </style>
+</head>
+<body>
+  <div>canvas.drawImage(参数)</div>
+  <div>1.CSSImageValue: HTMLElement.computedStyleMap获取</div>
+  <div>2.HTMLImageElement: Image对象获取</div>
+  <div>3.HTMLCanvasElement: Image对象获取</div>
+  <br>
+  <div>CSSImageValue</div>
+  <button class="CSSImageValue">Magic Wand</button>
+  <button type="button" id="CSSImageValueBtn">生成canvas图片</button>
+  <br><br>
+  <div>HTMLImageElement</div>
+  <div>
+    <div>本地图片</div>
+    <img src="src/七七.jpg" width="70px" height="70px" id="localimage">
+  </div>
+  <div>
+    <div>网络图片https://fanyi-cdn.cdn.bcebos.com/static/translation/img/footer/wechatQr_68e950b.png</div>
+    <input type="text">
+  </div>
+  <div>
+    <button id="HTMLImageElementBtn">生成canvas图片</button>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>

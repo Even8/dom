@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文件类型转换</title>
+  <style>
+    #draggable {
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    background: white;
+  }
+  .dropzone {
+    width: 200px;
+    height: 20px;
+    background: blueviolet;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  </style>
+</head>
+<body>
+  <div>fileList对象</div>
+  <div>1.input标签 - this.files[0]</div>
+  <div>2.drag事件 - event.dataTransfer.files[0]</div>
+  <div>3.canvas - 有兼容问题</div>
+
+  <div>input生成fileList对象</div>
+  <input type="file" id="file">
+  <br><br><br>
+
+  <div>drag生成fileList对象</div>
+  <div class="dropzone">
+    <div id="draggable" draggable="true" ondragstart="event.dataTransfer.setData('text/plain',null)">
+      This div is draggable
+    </div>
+  </div>
+  <div class="dropzone"></div>
+  <div class="dropzone"></div>
+  <div class="dropzone"></div>
+  <br><br>
+  
+  <div>canvas生成fileList对象</div>
+  <div class="handleCanvas">按钮</div>
+  <canvas id="canvas" width="300" height="300">
+    抱歉，您的浏览器不支持canvas元素
+    （这些内容将会在不支持<canvas>元素的浏览器或是禁用了JavaScript的浏览器内渲染并展现）
+  </canvas>
+  <script src="./src/index.js"></script>
+  <script>
+    // https://www.cnblogs.com/pengdt/p/12037986.html
+  </script>
+</body>
+</html>

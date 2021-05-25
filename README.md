@@ -32,3 +32,8 @@
 document.body
 document.scrollingElement.scrollTop = 0
 document.scrollTo(0,0)
+
+### 文件类型
+
+1. Blob: 原始数据的类文件对象；
+2. base64: 是二进制数据的一个编码格式，就像utf8一样的东西，他跟json一样，也是前后端交互能够相互识别的数据，他更多的是用来传递文件数据；

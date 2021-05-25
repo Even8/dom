@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filereader读取fileList</title>
+  <style>
+    .every_few {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div>获取base64有几个方式</div>
+  <div>用input + filereader</div>
+  <div>用url + canvas</div>
+  <div>用url + filereader 不支持跨域暂无</div>
+  <br>
+  <div>选择图片转成base64</div>
+  <input type="file" class="intputBtn">
+  <div class="base64Content">base64内容</div>
+  <br><br>
+  <div>将网络图片转成base64(通过canvas)</div>
+  <div>测试图片地址：https://fanyi-cdn.cdn.bcebos.com/static/translation/img/footer/wechatQr_68e950b.png</div>
+  <input id="canvasToB" type="text">
+  <br>
+  <img class="every_few" src=""/>
+  <div>
+    <button type="button" id="btnToB">生成base64图片</button>
+  </div>
+  <script src='./src/index.js'></script>
+</body>
+</html>
