@@ -2,7 +2,7 @@
 // 实例化（jszip）对象
 var zip = new JSZip();
 // 创建一个文件
-zip.file("hello.txt", "Hello[p my)6cxsw2q");
+zip.file("hello.txt", "Hello[p my)6cxsw2q")
 // 创建文件夹
 var photoZip = zip.folder("photos");
 var btn = document.getElementById('btn');
