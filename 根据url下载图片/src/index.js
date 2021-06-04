@@ -16,6 +16,6 @@ download.addEventListener('click', function() {
     a.download = "photo"; // 设置图片名称
     a.href = url; // 将生成的URL设置为a.href属性
     a.dispatchEvent(event); // 触发a的单击事件
-  };
+  };  
   image.src = url;
 })
